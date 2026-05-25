@@ -1,0 +1,201 @@
+<mxfile host="Electron" modified="2026-05-25T11:45:00.000Z" agent="Antigravity Agent" version="20.0.0">
+  <diagram id="QueryTalkAIClassDiagram" name="Class Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <!-- Layer 0 and Layer 1 -->
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- User Class Swimlane -->
+        <mxCell id="Class_User" value="&lt;b&gt;User&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontColor=#01579b;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="220" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_1" value="+ id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="26" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_2" value="+ clerk_user_id: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="46" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_3" value="+ email: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="66" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_4" value="+ display_name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="86" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_5" value="+ plan: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="106" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_6" value="+ created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="126" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="User_Attr_7" value="+ updated_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_User">
+          <mxGeometry y="146" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- DatabaseConnection Class Swimlane -->
+        <mxCell id="Class_DatabaseConnection" value="&lt;b&gt;DatabaseConnection&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontColor=#01579b;" vertex="1" parent="1">
+          <mxGeometry x="380" y="50" width="220" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_1" value="+ id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="26" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_2" value="+ user_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="46" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_3" value="+ name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="66" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_4" value="+ db_type: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="86" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_5" value="+ connection_string_enc: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="106" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_6" value="+ host_hint: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="126" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_7" value="+ db_name_hint: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="146" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_8" value="+ schema_cache: JSONB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="166" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_9" value="+ schema_synced_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="186" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_10" value="+ is_active: Boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="206" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_11" value="+ created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="226" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DB_Attr_12" value="+ updated_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_DatabaseConnection">
+          <mxGeometry y="246" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation Class Swimlane -->
+        <mxCell id="Class_Conversation" value="&lt;b&gt;Conversation&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontColor=#01579b;" vertex="1" parent="1">
+          <mxGeometry x="50" y="380" width="220" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_1" value="+ id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="26" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_2" value="+ user_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="46" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_3" value="+ connection_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="66" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_4" value="+ title: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="86" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_5" value="+ created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="106" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Conv_Attr_6" value="+ updated_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Conversation">
+          <mxGeometry y="126" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Message Class Swimlane -->
+        <mxCell id="Class_Message" value="&lt;b&gt;Message&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontColor=#01579b;" vertex="1" parent="1">
+          <mxGeometry x="380" y="380" width="220" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_1" value="+ id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="26" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_2" value="+ conversation_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="46" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_3" value="+ role: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="66" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_4" value="+ content: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="86" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_5" value="+ sql_generated: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="106" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_6" value="+ query_result: JSONB" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="126" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_7" value="+ chart_type: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="146" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_8" value="+ row_count: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="166" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_9" value="+ duration_ms: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="186" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Msg_Attr_10" value="+ created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_Message">
+          <mxGeometry y="206" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- QueryHistory Class Swimlane -->
+        <mxCell id="Class_QueryHistory" value="&lt;b&gt;QueryHistory&lt;/b&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;fillColor=#e1f5fe;strokeColor=#01579b;fontColor=#01579b;" vertex="1" parent="1">
+          <mxGeometry x="690" y="215" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_1" value="+ id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="26" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_2" value="+ connection_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="46" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_3" value="+ message_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="66" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_4" value="+ sql_query: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="86" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_5" value="+ status: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="106" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_6" value="+ duration_ms: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="126" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_7" value="+ error_message: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="146" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Hist_Attr_8" value="+ executed_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="Class_QueryHistory">
+          <mxGeometry y="166" width="220" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Connectors / Associations -->
+        
+        <!-- User owns DatabaseConnection -->
+        <mxCell id="Link_User_DBConn" value="1 owns *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_User" target="Class_DatabaseConnection">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- User starts Conversation -->
+        <mxCell id="Link_User_Conv" value="1 starts *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_User" target="Class_Conversation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DatabaseConnection used in Conversation -->
+        <mxCell id="Link_DBConn_Conv" value="1 used in *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_DatabaseConnection" target="Class_Conversation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="330" as="sourcePoint" />
+            <mxPoint x="215" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- DatabaseConnection logs QueryHistory -->
+        <mxCell id="Link_DBConn_Hist" value="1 logs *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_DatabaseConnection" target="Class_QueryHistory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Conversation contains Messages -->
+        <mxCell id="Link_Conv_Msg" value="1 contains *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_Conversation" target="Class_Message">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Message triggers QueryHistory -->
+        <mxCell id="Link_Msg_Hist" value="0..1 triggers *" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;strokeWidth=1.5;strokeColor=#01579b;fontColor=#01579b;" edge="1" parent="1" source="Class_Message" target="Class_QueryHistory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
